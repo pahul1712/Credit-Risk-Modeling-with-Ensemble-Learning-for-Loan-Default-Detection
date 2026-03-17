@@ -63,8 +63,13 @@ Target Variable:
 Final dataset: **32,408 rows**
 
 ---
+### Visual Representation of EDA:
 
-### 2 Exploratory Data Analysis
+![Correlation Heatmap](images/correlation_heatmap.png)
+
+![Loan Intent Distribution](images/loan_intent_distribution.png)
+
+---
 
 EDA included:
 
@@ -128,12 +133,8 @@ Special focus was placed on **Recall and F1 Score**, since detecting defaulters 
 
 ## Model Performance
 
-| Model | Accuracy | Precision | Recall | F1 Score |
-|------|------|------|------|------|
-| Logistic Regression | 0.87 | 0.78 | 0.56 | 0.65 |
-| Random Forest | 0.93 | 0.97 | 0.71 | 0.82 |
-| XGBoost | 0.92 | 0.83 | 0.80 | 0.82 |
-| CatBoost | 0.92 | 0.84 | 0.79 | 0.82 |
+![Model Comparison](images/model_comparison.png)
+
 
 ### Best Model: **XGBoost**
 
@@ -145,7 +146,11 @@ ROC-AUC: **0.95**
 
 ---
 
-## Feature Importance
+## Feature Importance of XGBoost Model
+
+![Feature Importance](images/feature_importance.png)
+
+---
 
 Top predictors of loan default:
 
@@ -157,6 +162,13 @@ Top predictors of loan default:
 • credit history length
 
 These features strongly influence borrower risk.
+
+---
+
+## ROC Curve
+
+![ROC Curve](images/roc_curve_xgboost.png)
+
 
 ---
 
@@ -209,7 +221,7 @@ credit-risk-default-prediction/
 │ └── loan_intent_distribution.png
 │ └── model_comparison.png
 │ └── roc_curve_xgboost.png
-│ └── xgboost_feature_importance.png
+│ └── feature_importance.png
 │
 ├── models/
 │ └── final_feature_order.pkl
