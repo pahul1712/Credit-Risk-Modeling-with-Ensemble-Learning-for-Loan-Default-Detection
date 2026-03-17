@@ -22,6 +22,28 @@ The goal of this project is to develop a machine learning model that can **accur
 
 ---
 
+## Project Workflow
+```
+Dataset
+   ↓
+Data Cleaning
+   ↓
+Exploratory Data Analysis
+   ↓
+Feature Engineering
+   ↓
+Encoding & Scaling
+   ↓
+Model Training
+   ↓
+Model Evaluation
+   ↓
+Best Model Selection (XGBoost)
+   ↓
+Business Insights
+```
+---
+
 ## Dataset
 
 Dataset: Credit Risk Dataset (Kaggle)
